@@ -37,7 +37,7 @@ print_r(
 //print_r(
 //    TencentMailAdministrativeDepartment::createRequest(
 //        $accessTokenArr['data']['access_token'],
-//        '狼穴8号',
+//        '狼穴1号',
 //        '7366057299320244895',
 //        3
 //    )

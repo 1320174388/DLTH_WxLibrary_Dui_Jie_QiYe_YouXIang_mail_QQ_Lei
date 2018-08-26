@@ -233,34 +233,6 @@ class SystemlogDepartment
     }
 
     /**
-     * 名  称 : replace()
-     * 功  能 : 正则替换后数据数组
-     * 创  建 : 2018/08/22 14:14
-     */
-    private static function replace($res)
-    {
-        $a = preg_replace("/\"id\":/","\"id\":\"",$res);
-        $b = preg_replace("/,\"name\"/","\",\"name\"",$a);
-        $c = preg_replace("/\"parentid\":/","\"parentid\":\"",$b);
-        $d = preg_replace("/,\"order\"/","\",\"order\"",$c);
-        return json_decode($d,true);
-    }
-
-    /**
-     * 名  称 : push_replace()
-     * 功  能 : 正则替换后JSON
-     * 创  建 : 2018/08/22 14:14
-     */
-    private static function push_replace($data)
-    {
-        $data = preg_replace("/\"id\":\"/","\"id\":",$data);
-        $data = preg_replace("/\",\"name\"/",",\"name\"",$data);
-        $data = preg_replace("/\"parentid\":\"/","\"parentid\":",$data);
-        $data = preg_replace("/\",\"order\"/",",\"order\"",$data);
-        return $data;
-    }
-
-    /**
      * 名  称 : validate()
      * 功  能 : 验证数据
      * 创  建 : 2018/08/22 10:48
